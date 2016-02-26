@@ -26,7 +26,9 @@ function executeClock() {
 function updateClock() {
     	var inputHours = prompt("Enter hours:");
 	userHours = parseInt(inputHours);
-	
+
+    
+
 	while (isNaN(userHours) || userHours >23 || userHours <0)
 	{
 		inputHours = prompt("Please enter a number between 0 and 23:");
@@ -44,7 +46,7 @@ function updateClock() {
 	}
 
 
-		
+
     executeClock();
 }
 
