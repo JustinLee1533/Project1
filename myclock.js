@@ -23,11 +23,21 @@ function clock() {
             userMinutes = 0;
         }
 
-	var userTime = new Date(2016, 1, 15, userHours, userMinutes, 0, 0);
+	var userTime = new Date(2016, 2, 26, userHours, userMinutes, 0, 0);
 	var parity = "";
 
 	var diffTime = new Date() - startTime;
-	userTime.setMilliseconds(userTime.getMilliseconds() + diffTime);
+	userTime.setMilliseconds(userTime.getMilliseconds() - diffTime);
+	var dayofweek=userTime.getDay();
+	var day= "";
+	if(dayofweek==6){ day= "Friday!";}
+	else if(dayofweek==0) { day= "Saturday";}
+	else if(dayofweek==1) { day= "Sunday";}
+	else if(dayofweek==2) { day= "Monday :(";}
+	else if(dayofweek==3) { day= "Tuesday";}
+	else if(dayofweek==1) { day= "Wednesday";}
+	else { day= "Thrusday";}
+
 
 	var seconds = (userTime.getSeconds() < 10 ? "0" : "") + userTime.getSeconds();
 	var minutes = (userTime.getMinutes() < 10 ? "0" : "") + userTime.getMinutes();
@@ -55,7 +65,7 @@ function clock() {
 		}
 	}
 
-	var currentTime = hours + ":" + minutes + ":" + seconds + " " + parity;
+	var currentTime = hours + ":" + minutes + ":" + seconds + " " + parity + day;
 
 	document.getElementById("Timer").firstChild.nodeValue = currentTime;
 

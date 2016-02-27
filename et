@@ -1,0 +1,466 @@
+[33mcommit f8ef880c4d85d795ea015edc13c2527dff04691c[m
+Author: Justin Lee <justinlee1533@gmail.com>
+Date:   Sat Feb 27 12:28:43 2016 -0600
+
+    Add zoom in, zoom out, and hide display functionality
+
+[33mcommit ad021974ce635a53785599e993edd4f5f6e0573a[m
+Author: Ethan Ward <ethanandrewward@gmail.com>
+Date:   Sun Feb 14 16:50:34 2016 -0600
+
+    Change formatting for user input
+
+[33mcommit 75e0067fc3647d61c6db680ff27d6f54085f2deb[m
+Author: Ethan Ward <ethanandrewward@gmail.com>
+Date:   Sun Feb 14 16:49:25 2016 -0600
+
+    Change input text
+
+[33mcommit 76ecc5f3c1042cd134a9528e2a7cd9731f147efc[m
+Author: Ethan Ward <ethanandrewward@gmail.com>
+Date:   Sun Feb 14 16:02:59 2016 -0600
+
+    Remove setclock.js
+
+[33mcommit 83abf9032ac47a0dfdc95277238be4cfcef01a2f[m
+Author: Travis Augustine <augustine@ku.edu>
+Date:   Sun Feb 14 13:40:00 2016 -0600
+
+    Add HTML documentation of updateclock.js
+
+[33mcommit 3e23e22b9a70dfd88cea059943c59806b1970147[m
+Author: Travis Augustine <augustine@ku.edu>
+Date:   Sun Feb 14 13:39:29 2016 -0600
+
+    Add HTML documentation of myclock.js
+
+[33mcommit e03fa57fb8795de414c7acd9c455b298cb860035[m
+Author: Travis Augustine <augustine@ku.edu>
+Date:   Sun Feb 14 13:07:25 2016 -0600
+
+    update documentation
+
+[33mcommit 90589a1657551b658b4efe19247f301ea5c8cf4e[m
+Author: Travis Augustine <augustine@ku.edu>
+Date:   Sun Feb 14 13:06:52 2016 -0600
+
+    Update documentation
+
+[33mcommit 56de316588392cb778be6f00d9d7611daac264f8[m
+Author: Travis Augustine <augustine@ku.edu>
+Date:   Sun Feb 14 12:59:32 2016 -0600
+
+    Delete Works_Cited.txt
+
+[33mcommit 97dc404ab8a7e8ae14ebc78e5b62d2817c1898a7[m
+Author: Travis Augustine <augustine@ku.edu>
+Date:   Sun Feb 14 12:58:48 2016 -0600
+
+    move works cited file to documentation folder
+
+[33mcommit 1e41819654e88cf81bcc588dea2f9341dd158e55[m
+Author: Travis Augustine <augustine@ku.edu>
+Date:   Sun Feb 14 11:40:26 2016 -0600
+
+    Check for correct time inputs in updateclock function
+
+[33mcommit b86ae0ac0c0ef5a4b66da723505aa3be333080ea[m
+Author: Travis Augustine <augustine@ku.edu>
+Date:   Sun Feb 14 11:32:33 2016 -0600
+
+    Change updateclock function to check for numerical input
+
+[33mcommit 47d00027e8a11a08d8e255662dd4fac4776a126d[m
+Author: Travis Augustine <augustine@ku.edu>
+Date:   Sun Feb 14 11:12:37 2016 -0600
+
+    Call updateMode function on body load so that the time will show upon setting
+
+[33mcommit 7e771b21a4397f843ab45b19b74f223feed7c3bc[m
+Author: Travis Augustine <augustine@ku.edu>
+Date:   Sun Feb 14 10:48:50 2016 -0600
+
+    Update documentation
+
+[33mcommit b214583f69195fcf18c7123d8d1a682287cfc7b9[m
+Author: Ethan Ward <ethanandrewward@gmail.com>
+Date:   Sun Feb 14 10:06:30 2016 -0600
+
+    Add works cited document
+
+[33mcommit e9d94c50d5f88e9c60c5c9ed5f4bac2f74ffc762[m
+Author: Ethan Ward <ethanandrewward@gmail.com>
+Date:   Sat Feb 13 21:21:45 2016 -0600
+
+    Add names of functions to documentation
+
+[33mcommit 6218bd222419081ebbae79c9649a3df8f9156b01[m
+Author: Ethan Ward <ethanandrewward@gmail.com>
+Date:   Sat Feb 13 12:25:43 2016 -0600
+
+    Add documentation for functions
+
+[33mcommit 19e3b2dfdbb62aecf00ea3916af74de3c585d6d5[m
+Author: Ethan Ward <ethanandrewward@gmail.com>
+Date:   Sat Feb 13 12:09:52 2016 -0600
+
+    Add documentation at top of files
+
+[33mcommit a7c15ae7cbb38c7121b42a0186e3274eafe9bb14[m
+Author: Ethan Ward <ethanandrewward@gmail.com>
+Date:   Sat Feb 13 12:08:59 2016 -0600
+
+    Remove unused files
+
+[33mcommit 1ffaf9756b036decced4b7d2faf69967a329b29a[m
+Author: Ethan Ward <ethanandrewward@gmail.com>
+Date:   Sat Feb 13 10:20:26 2016 -0600
+
+    Move clock updating functions to own file
+
+[33mcommit 3cb157e81d04cdb62be730b948b450bcc3296d39[m
+Author: Ethan Ward <ethanandrewward@gmail.com>
+Date:   Fri Feb 12 11:48:07 2016 -0600
+
+    Remove need for setclock
+
+[33mcommit 3b8b78865b3a5f16bfbad4403003ce814eeceae0[m
+Author: Travis Augustine <augustine@ku.edu>
+Date:   Fri Feb 12 07:57:47 2016 -0600
+
+    remove userHours and userMinutes variables
+
+[33mcommit 602e387321d8876db676d883cf3c8faba02b2367[m
+Author: NeisesMike <neisesmichael@gmail.com>
+Date:   Fri Feb 12 00:32:37 2016 -0600
+
+    Create myStyle.css
+
+[33mcommit e6273eefef103197941874874b5554be4fa05fc0[m
+Author: NeisesMike <neisesmichael@gmail.com>
+Date:   Fri Feb 12 00:32:07 2016 -0600
+
+    Add stylesheet reference
+
+[33mcommit a096df812e475c0442bd77f38c98480c91c1abd9[m
+Author: NeisesMike <neisesmichael@gmail.com>
+Date:   Fri Feb 12 00:20:29 2016 -0600
+
+    Fix am/pm bug
+
+[33mcommit 201bb8a4df86042cceda385fca618011b6e5f47a[m
+Author: Ethan Ward <ethanandrewward@gmail.com>
+Date:   Fri Feb 12 00:12:40 2016 -0600
+
+    Clean up setclock.js to remove commented code and fix formatting
+
+[33mcommit c4b71e1179c94c7d48cafa68425bc72e58766d2e[m
+Author: NeisesMike <neisesmichael@gmail.com>
+Date:   Fri Feb 12 00:08:03 2016 -0600
+
+    Remove unused initialstate.js source
+
+[33mcommit 056a895f54f0967ef671ea459bdb91f96354145e[m
+Author: NeisesMike <neisesmichael@gmail.com>
+Date:   Fri Feb 12 00:05:25 2016 -0600
+
+    Make all spacing tabs
+    
+    Beforehand, a lot of the spacing was individual space bar presses, and a lot of it was tab spacing. By making it all tab spacing, it becomes easier to read when tab spacing is different for different text editors.
+
+[33mcommit d18432fdc2306d1f38d94a096061faff21b169a6[m
+Author: Ethan Ward <ethanandrewward@gmail.com>
+Date:   Thu Feb 11 23:55:07 2016 -0600
+
+    Add functionality for switching between 12/24 hour mode dynamically
+
+[33mcommit cc6f634675cc77aa75229db13721b68ff1b71cec[m
+Author: NeisesMike <neisesmichael@gmail.com>
+Date:   Thu Feb 11 23:38:12 2016 -0600
+
+    Add support for am/pm
+
+[33mcommit 136b96aadbb5e38efb61e292c8234574c7f17189[m
+Author: NeisesMike <neisesmichael@gmail.com>
+Date:   Thu Feb 11 22:17:45 2016 -0600
+
+    Add conditional for hour mode switching
+
+[33mcommit ed870ba99cfd36ff8f2e00b10f63c8d2685506da[m
+Author: NeisesMike <neisesmichael@gmail.com>
+Date:   Thu Feb 11 22:17:11 2016 -0600
+
+    Add variables for hour modes
+
+[33mcommit 9f50ab0bbc22bfbadbae8aed1199b0675fcd1d62[m
+Author: Travis Augustine <augustine@ku.edu>
+Date:   Thu Feb 11 21:24:37 2016 -0600
+
+    Update updateClock function to run executeClock function
+
+[33mcommit f7c45dd5ec248f1666a2eb59780e8fd05d97cb7f[m
+Author: Travis Augustine <augustine@ku.edu>
+Date:   Thu Feb 11 21:21:32 2016 -0600
+
+    Update function parameters
+
+[33mcommit 79d63408ca772adbf25facc299e708bfe5dd59fa[m
+Author: Travis Augustine <augustine@ku.edu>
+Date:   Thu Feb 11 21:16:25 2016 -0600
+
+    Correct date parameters
+
+[33mcommit d0aa993ab91b607805d2d13f75fac89c59befa89[m
+Author: Travis Augustine <augustine@ku.edu>
+Date:   Thu Feb 11 21:15:51 2016 -0600
+
+    Update clock function to take custom time
+
+[33mcommit 64f3e5dadb38fcaf6166388d1200ca216cd33550[m
+Author: Travis Augustine <augustine@ku.edu>
+Date:   Thu Feb 11 21:15:13 2016 -0600
+
+    Update set clock function to set the hours and minutes
+
+[33mcommit 35506489a7f3cc987714a71d4e021a227030a93c[m
+Author: Travis Augustine <augustine@ku.edu>
+Date:   Thu Feb 11 21:13:45 2016 -0600
+
+    Implement executeClock function to set the clock and run
+
+[33mcommit c08da3546011d575829c1cb56f1f7b9dd9f14e38[m
+Author: Travis Augustine <augustine@ku.edu>
+Date:   Thu Feb 11 21:12:03 2016 -0600
+
+    Implement updateClock prompts to set time
+
+[33mcommit 5d315b4fca23d9835efa3997619c283663be1572[m
+Author: Travis Augustine <augustine@ku.edu>
+Date:   Thu Feb 11 21:07:35 2016 -0600
+
+    Remove HTML form
+
+[33mcommit ed9416cc4ee283f3c995acd8f7ca2f48f421008e[m
+Author: Ethan Ward <ethanandrewward@gmail.com>
+Date:   Thu Feb 11 18:46:33 2016 -0600
+
+    Change myclock to start at 00:00:00
+
+[33mcommit 587361f1b83eae136ec2031e3ed42f052a1575f5[m
+Author: Ethan Ward <ethanandrewward@gmail.com>
+Date:   Thu Feb 11 18:44:35 2016 -0600
+
+    Change Clock to Clock.html
+
+[33mcommit 989d69ed7cdfb2026d2c17e2ee8f4e436d21b46c[m
+Author: Ethan Ward <ethanandrewward@gmail.com>
+Date:   Thu Feb 11 18:38:56 2016 -0600
+
+    Update myclock to display 0s before single digits
+
+[33mcommit 24f39094208dd13edfa307ae2cada4d689c5fad4[m
+Author: NeisesMike <neisesmichael@gmail.com>
+Date:   Wed Feb 10 18:30:43 2016 -0600
+
+    Declare variables inside function
+
+[33mcommit e737327b73ee5db5bf90ff91fa6d5daa7f05b724[m
+Author: NeisesMike <neisesmichael@gmail.com>
+Date:   Wed Feb 10 18:30:05 2016 -0600
+
+    Change html file to again use the .js file
+
+[33mcommit fa01ec4ec9cbfcd170c4107fe41c4342104a8693[m
+Author: Travis Augustine <augustine@ku.edu>
+Date:   Wed Feb 10 18:16:48 2016 -0600
+
+    add clock function to body
+
+[33mcommit d12c1e99e776eebb2dbee84be5980c4b57290189[m
+Author: Travis Augustine <augustine@ku.edu>
+Date:   Wed Feb 10 18:09:08 2016 -0600
+
+    Update variable names
+
+[33mcommit ceb09028756546ca0e17063a9b56bb07be73bad6[m
+Author: Travis Augustine <augustine@ku.edu>
+Date:   Wed Feb 10 18:05:52 2016 -0600
+
+    Comment out form
+
+[33mcommit 654c347b61cfe23f90c7687e944e0a88b9a25e50[m
+Author: Travis Augustine <augustine@ku.edu>
+Date:   Wed Feb 10 18:03:42 2016 -0600
+
+    Add javascript to call setInterval and clock functions
+
+[33mcommit 2ff66192d3d2ebb6dc9387ba623035fb92d5bdd3[m
+Author: Travis Augustine <augustine@ku.edu>
+Date:   Wed Feb 10 18:00:18 2016 -0600
+
+    Update clock function to set a custom time to userTime, calculate the difference between the current time and the time when the page loaded, and adjust userTime for this difference
+
+[33mcommit 49c3860e6fc4f347ab6c2f6f2e29a6051a02c27f[m
+Author: Travis Augustine <augustine@ku.edu>
+Date:   Wed Feb 10 17:56:20 2016 -0600
+
+    Add startTime variable to get the date when the page opens
+
+[33mcommit bdd1168618e3278e58199bac31cdbc947258d1e4[m
+Author: Travis Augustine <augustine@ku.edu>
+Date:   Wed Feb 10 17:52:18 2016 -0600
+
+    Add userTime and diffTime variable and remove time variable
+
+[33mcommit 2103cfeb27acf97f819734c116d36dd7b7ba2a50[m
+Author: NeisesMike <neisesmichael@gmail.com>
+Date:   Mon Feb 8 21:37:04 2016 -0600
+
+    Simplify time initialization.
+
+[33mcommit f784312a3d57a3664316c5142b1a1675cf941e44[m
+Author: NeisesMike <neisesmichael@gmail.com>
+Date:   Mon Feb 8 21:17:02 2016 -0600
+
+    Fix onsubmit clock call
+    
+    While nothing shows up to start, if you press the Local Time button, you can see the local time show up for just a split second. It seems like the function only runs through once and stops.
+
+[33mcommit e6a931cd96169ff5df15359a6b309ddf32a88f93[m
+Author: NeisesMike <neisesmichael@gmail.com>
+Date:   Mon Feb 8 20:58:02 2016 -0600
+
+    Update script tags and function calls
+
+[33mcommit a38a2c5a03d25f30a10e0f1b771f7a390980cdeb[m
+Author: NeisesMike <neisesmichael@gmail.com>
+Date:   Mon Feb 8 20:55:49 2016 -0600
+
+    Remove setclock functionality
+
+[33mcommit 9f6374d98bd17321d729043b34ec49b25cc8bc88[m
+Author: NeisesMike <neisesmichael@gmail.com>
+Date:   Mon Feb 8 20:55:02 2016 -0600
+
+    Create setclock file and function
+
+[33mcommit 37a1bd680d300bc56b314ed7bd89afd91af36997[m
+Author: NeisesMike <neisesmichael@gmail.com>
+Date:   Mon Feb 8 20:08:12 2016 -0600
+
+    Fix typo
+
+[33mcommit 47eab2b43522c8f41e41b852e5d4376ffa4292e8[m
+Author: NeisesMike <neisesmichael@gmail.com>
+Date:   Mon Feb 8 20:04:08 2016 -0600
+
+    Modify forms to use appropriate clock functions.
+
+[33mcommit ba95147aac5b29468dcbbcaed40711ce8711dd76[m
+Author: NeisesMike <neisesmichael@gmail.com>
+Date:   Mon Feb 8 19:55:22 2016 -0600
+
+    Add readability to Clock file
+
+[33mcommit a804bccee80f24cbe05bfff4b86624e58d670052[m
+Author: NeisesMike <neisesmichael@gmail.com>
+Date:   Mon Feb 8 19:50:47 2016 -0600
+
+    Add buttons to interact with clock functions
+
+[33mcommit ab5b96a5de91911751ad1f7e00e09835558529d3[m
+Author: NeisesMike <neisesmichael@gmail.com>
+Date:   Mon Feb 8 19:47:54 2016 -0600
+
+    Add clock function with time parameters
+
+[33mcommit 98a0e7900dc2ec7e05bcd375d62a7c63cb0e65c7[m
+Author: Ethan Ward <ethanandrewward@gmail.com>
+Date:   Mon Feb 8 16:30:09 2016 -0600
+
+    Fix error in name of function called
+
+[33mcommit cf57cc5d10022ec805229fa2c08de23cc3523481[m
+Author: Travis Augustine <augustine@ku.edu>
+Date:   Mon Feb 8 16:26:50 2016 -0600
+
+    Create new script tag for initialstate source
+
+[33mcommit c277e62c9c00aec99ff35520b80d5b47ba293d3b[m
+Author: Travis Augustine <augustine@ku.edu>
+Date:   Mon Feb 8 16:20:51 2016 -0600
+
+    Move setInterval from onload to onsubmit
+
+[33mcommit 17e2a89bc3cc489e4af312a0f4f908f17998614c[m
+Author: Travis Augustine <augustine@ku.edu>
+Date:   Mon Feb 8 16:17:54 2016 -0600
+
+    Add currentTime variable
+
+[33mcommit 07ae1fefc5d62db9ae7617a47873214953a3e7f6[m
+Author: Travis Augustine <augustine@ku.edu>
+Date:   Mon Feb 8 16:15:39 2016 -0600
+
+    Add initial state to source
+
+[33mcommit 4205980c93d4730c5716f848795f5c0655e07ac9[m
+Author: Travis Augustine <augustine@ku.edu>
+Date:   Mon Feb 8 16:13:09 2016 -0600
+
+    Add javascript variables in head
+
+[33mcommit 0ea2d8b5695415f8cb5c7a7ee1f3521665ef48d4[m
+Merge: 99021e2 46f19b1
+Author: Ethan Ward <ethanandrewward@gmail.com>
+Date:   Mon Feb 8 16:08:31 2016 -0600
+
+    Merge branch 'master' of https://github.com/ethanaward/Project1
+
+[33mcommit 46f19b13b9cc96651bb14ed59a07d1172bbc6728[m
+Author: Travis Augustine <augustine@ku.edu>
+Date:   Mon Feb 8 16:08:25 2016 -0600
+
+    Update onload to initiialstate
+
+[33mcommit 99021e2e5bae23e1911b1458fc4783bf86e40ffb[m
+Author: Ethan Ward <ethanandrewward@gmail.com>
+Date:   Mon Feb 8 16:07:58 2016 -0600
+
+    Add function to start clock at 0
+
+[33mcommit dadf4d9d219442ba964d73afda6421dd17b69228[m
+Author: Travis Augustine <augustine@ku.edu>
+Date:   Mon Feb 8 16:02:48 2016 -0600
+
+    Create user input form
+
+[33mcommit 53da9ee5429facf4b001ffe6e363e8634395ca1d[m
+Author: Ethan Ward <ethanandrewward@gmail.com>
+Date:   Mon Feb 8 15:58:33 2016 -0600
+
+    Update to use global variables
+
+[33mcommit e467afa9d6fb8c3727df198461e090889334332b[m
+Author: Ethan Ward <ethanandrewward@gmail.com>
+Date:   Mon Feb 8 15:48:09 2016 -0600
+
+    Update HTML file to reference script
+
+[33mcommit 49027f90765b8dcb7bc3a291dbb431d484328a4c[m
+Author: Ethan Ward <ethanandrewward@gmail.com>
+Date:   Mon Feb 8 15:45:53 2016 -0600
+
+    Make clock function own file
+
+[33mcommit a07d1f3364302b2e22df37ae53af05bb9f000321[m
+Author: Travis Augustine <augustine@ku.edu>
+Date:   Mon Feb 8 15:44:34 2016 -0600
+
+    Create myclock.js
+
+[33mcommit 8a3f9aa6b1a28e4476ba1545cf62e22b7cd243e5[m
+Author: Ethan Ward <ethanandrewward@gmail.com>
+Date:   Mon Feb 8 15:39:27 2016 -0600
+
+    Initial commit
