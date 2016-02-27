@@ -2,27 +2,27 @@
 *	@file : myClock.js
 *	@author : Ethan Ward, Mike Neises, Travis Augustine
 *	@date : 2016.02.13
-*	@brief: Sets the time based on user input, updates it using the difference from the current time, changes how the display of the time looks, and then displays in in the browser. 
+*	@brief: Sets the time based on user input, updates it using the difference from the current time, changes how the display of the time looks, and then displays in in the browser.
 */
 
 /**
         *  @name clock
 	*  @pre None, although ideally updateClock() has been called to set the time.
 	*  @post The time is set and then updated using the difference between its time and the current time. The string used for displaying the time is updated according to the mode, and the time is displayed.
-	*  @return 
+	*  @return
 */
 function clock() {
-	
+
         if( isNaN(userHours) ) {
-       
+
             userHours = 0;
         }
-                    
+
         if( isNaN(userMinutes) ) {
-			
+
             userMinutes = 0;
-        }	
-    
+        }
+
 	var userTime = new Date(2016, 1, 15, userHours, userMinutes, 0, 0);
 	var parity = "";
 
@@ -58,5 +58,42 @@ function clock() {
 	var currentTime = hours + ":" + minutes + ":" + seconds + " " + parity;
 
 	document.getElementById("Timer").firstChild.nodeValue = currentTime;
+
+}
+
+var fontSize = 20;
+var timer = document.getElementById("Timer");
+function zoomOut()
+{
+	if(fontSize>10)
+	{
+		fontSize = fontSize-10;
+	}
+	document.getElementById("Timer").style.fontSize = fontSize+"%";
+
+}
+
+function zoomIn()
+{
+		if(fontSize<500)
+		{
+			fontSize = fontSize+10;
+		}
+			document.getElementById("Timer").style.fontSize = fontSize+"%";
+}
+
+var toggle = 0;
+function hide()
+{
+	if(toggle == 0)
+	{
+		toggle = 1;
+		document.getElementById("Timer").style.color = "lightblue";
+	}else
+	{
+		toggle = 0;
+		document.getElementById("Timer").style.color = "navy";
+	}
+
 
 }

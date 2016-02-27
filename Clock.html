@@ -9,32 +9,38 @@
 
 <head>
 
-	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<link rel="stylesheet" type="text/css" href="myStyle.css">
 
 	<script src = "myclock.js">
 	</script>
-       
+
 	<script src = "setclock.js">
 	</script>
-        
+
 	<script type = "text/javascript" src = "updateclock.js">
 		var userHours;
 		var userMinutes;
 		var startTime;
 		var standard = 0;
-        	
+
 		</script>
 
 </head>
 
 <body onload ="updateMode(0)">
 
-	<div id = "Timer">00:00:00</div>
+
+		<div id = "Timer">00:00:00</div>
 
 	<div id = "buttons">
 		<button onclick="updateClock()">Set Time</button>
 		<button onclick="updateMode(0)">24-Hour Mode</button>
 		<button onclick="updateMode(1)">12-Hour Mode</button>
+		<br><br>
+		<button onclick="zoomIn()">Zoom In</button>
+		<button onclick="zoomOut()">Zoom Out</button>
+		<button onclick="hide()">Hide Display</button>
+
 	</div>
 
 </body>
