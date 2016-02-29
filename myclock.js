@@ -6,7 +6,7 @@
 */
 
 /**
-        *  @name clock
+  *  @name clock
 	*  @pre None, although ideally updateClock() has been called to set the time.
 	*  @post The time is set and then updated using the difference between its time and the current time. The string used for displaying the time is updated according to the mode, and the time is displayed.
 	*  @return
@@ -23,7 +23,22 @@ function clock() {
             userMinutes = 0;
         }
 
-	var userTime = new Date(2016, 2, 26, userHours, userMinutes, 0, 0);
+        if(isNaN(userSeconds))
+        {
+          userSeconds = 0;
+        }
+
+        if(isNaN(userMonth))
+        {
+          userMonth = 0;
+        }
+
+        if(isNaN(userDate))
+        {
+          userDate = 0;
+        }
+
+	var userTime = new Date(2016, userMonth, userDate, userHours, userMinutes, userSeconds, 0);
 	var parity = "";
 	var diffTime = new Date() - startTime;
 	userTime.setMilliseconds(userTime.getMilliseconds() - diffTime);
@@ -77,15 +92,15 @@ function clock() {
 	if(stopwatch_running == true)
 	{
 		stopwatchTime.setMilliseconds(stopwatchTime.getMilliseconds() - diffTime);
+		var stopwatch_seconds = (stopwatchTime.getSeconds() < 10 ? "0" : "") + stopwatchTime.getSeconds();
+		var stopwatch_minutes = (stopwatchTime.getMinutes() < 10 ? "0" : "") + stopwatchTime.getMinutes();
+		var stopwatch_hours = (stopwatchTime.getHours() < 10 ? "0" : "") + stopwatchTime.getHours();
 	}
 	else
 	{
 		stopwatchTime.setMilliseconds(diffTime);
 	}
-	
-	var stopwatch_seconds = (stopwatchTime.getSeconds() < 10 ? "0" : "") + stopwatchTime.getSeconds();
-	var stopwatch_minutes = (stopwatchTime.getMinutes() < 10 ? "0" : "") + stopwatchTime.getMinutes();
-	var stopwatch_hours = (stopwatchTime.getHours() < 10 ? "0" : "") + stopwatchTime.getHours();
+
 	
 	var currentTime = stopwatch_hours + ":" + stopwatch_minutes + ":" + stopwatch_seconds;
 	document.getElementById("Stopwatch").firstChild.nodeValue = currentTime;

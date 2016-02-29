@@ -25,9 +25,7 @@ function executeClock() {
 */
 function updateClock() {
     	var inputHours = prompt("Enter hours:");
-	userHours = parseInt(inputHours);
-
-
+      userHours = parseInt(inputHours);
 
 	while (isNaN(userHours) || userHours >23 || userHours <0)
 	{
@@ -45,7 +43,57 @@ function updateClock() {
 		userMinutes = parseInt(inputMinutes);
 	}
 
+  var inputSeconds = prompt("Enter Seconds:")
+  userSeconds = parseInt(inputSeconds);
 
+  while(isNaN(userSeconds)|| userSeconds>59 || userSeconds<0)
+  {
+    inputSeconds = prompt("Please enter a number between 0 and 59");
+    userSeconds= parseInt(inputSeconds);
+  }
+
+  var inputMonth = prompt("Enter Month (1-12):")
+  userMonth = parseInt(inputMonth);
+
+  while(isNaN(userMonth)|| userMonth>12 || userMonth<1)
+  {
+    var inputMonth = prompt("Enter Month (1-12):")
+    userMonth = parseInt(inputMonth);
+  }
+
+  //determine how many days in the month here
+  if((userMonth==1)||(userMonth == 3)||(userMonth == 5)||(userMonth == 7)||(userMonth == 8)||(userMonth == 10)||(userMonth == 12))
+  {
+    var inputDate = prompt("Enter Day (1-31):")
+    userDate = parseInt(inputDate);
+
+    while(isNaN(userDate)|| userDate>31 || userDate<1)
+    {
+      var inputDate = prompt("Enter Day (1-31):")
+      userDate = parseInt(inputDate);
+    }
+
+  }else if((userMonth == 4)||(userMonth == 6)||(userMonth == 9)||(userMonth == 11))
+  {
+    var inputDate = prompt("Enter Day (1-30):")
+    userDate = parseInt(inputDate);
+
+    while(isNaN(userDate)|| userDate>30 || userDate<1)
+    {
+      var inputDate = prompt("Enter Day (1-30):")
+      userDate = parseInt(inputDate);
+    }
+  }else
+  {
+    var inputDate = prompt("Enter Day (1-29):")
+    userDate = parseInt(inputDate);
+
+    while(isNaN(userDate)|| userDate>29 || userDate<1)
+    {
+      var inputDate = prompt("Enter Day (1-29):")
+      userDate = parseInt(inputDate);
+    }
+  }
 
     executeClock();
 }
