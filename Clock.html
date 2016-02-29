@@ -14,9 +14,6 @@
 	<script src = "myclock.js">
 	</script>
 
-	<script src = "setclock.js">
-	</script>
-
 	<script type = "text/javascript" src = "updateclock.js">
 		var userHours;
 		var userMinutes;
@@ -31,6 +28,7 @@
 
 
 		<div id = "Timer">00:00:00</div>
+		<div id = "Stopwatch">00:000:00</div>
 
 	<div id = "buttons">
 		Clock Control
@@ -51,11 +49,9 @@
 		<button onclick="">Reset</button>
 		<br><br>
 		Stopwatch
-		<button onclick="">Stopwatch Set</button>
-		<button onclick="">Start</button>
-		<button onclick="">Pause</button>
-		<button onclick="">Resume</button>
-		<button onclick="">Reset</button>
+		<button onclick="stopWatchStart()">Stopwatch Start</button>
+		<button onclick="stopWatchStop()">Pause</button>
+		<button onclick="stopWatchReset()">Reset</button>
 		<br><br>
 		Calendar
 		<button onclick="">Set Day</button>		<!--radio buttons? -->

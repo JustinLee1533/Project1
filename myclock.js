@@ -25,7 +25,6 @@ function clock() {
 
 	var userTime = new Date(2016, 2, 26, userHours, userMinutes, 0, 0);
 	var parity = "";
-
 	var diffTime = new Date() - startTime;
 	userTime.setMilliseconds(userTime.getMilliseconds() - diffTime);
 	var dayofweek=userTime.getDay();
@@ -35,9 +34,8 @@ function clock() {
 	else if(dayofweek==1) { day= "Sunday";}
 	else if(dayofweek==2) { day= "Monday :(";}
 	else if(dayofweek==3) { day= "Tuesday";}
-	else if(dayofweek==1) { day= "Wednesday";}
-	else { day= "Thrusday";}
-
+	else if(dayofweek==4) { day= "Wednesday";}
+	else { day= "Thursday";}
 
 	var seconds = (userTime.getSeconds() < 10 ? "0" : "") + userTime.getSeconds();
 	var minutes = (userTime.getMinutes() < 10 ? "0" : "") + userTime.getMinutes();
@@ -69,6 +67,28 @@ function clock() {
 
 	document.getElementById("Timer").firstChild.nodeValue = currentTime;
 
+	
+	//Stopwatch Stuff
+	var stopwatchTime = new Date(2016, 1, 1, 0, 0, 0 ,0);
+	var stopwatch_hours = 0;
+	var stopwatch_minutes = 0;
+	var stopwatch_seconds = 0;
+	var stopwatch_running = false;
+	if(stopwatch_running == true)
+	{
+		stopwatchTime.setMilliseconds(stopwatchTime.getMilliseconds() - diffTime);
+	}
+	else
+	{
+		stopwatchTime.setMilliseconds(diffTime);
+	}
+	
+	var stopwatch_seconds = (stopwatchTime.getSeconds() < 10 ? "0" : "") + stopwatchTime.getSeconds();
+	var stopwatch_minutes = (stopwatchTime.getMinutes() < 10 ? "0" : "") + stopwatchTime.getMinutes();
+	var stopwatch_hours = (stopwatchTime.getHours() < 10 ? "0" : "") + stopwatchTime.getHours();
+	
+	var currentTime = stopwatch_hours + ":" + stopwatch_minutes + ":" + stopwatch_seconds;
+	document.getElementById("Stopwatch").firstChild.nodeValue = currentTime;
 }
 
 var fontSize = 100;
