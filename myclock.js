@@ -71,7 +71,7 @@ function clock() {
 
 }
 
-var fontSize = 20;
+var fontSize = 100;
 var timer = document.getElementById("Timer");
 function zoomOut()
 {

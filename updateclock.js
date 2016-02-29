@@ -6,7 +6,7 @@
 */
 
 /**
-        *  @name executeClock
+  *  @name executeClock
 	*  @pre updateClock() has been called to set a time.
 	*  @post The clock function is called to display the time.
 	*  @return None
@@ -51,7 +51,7 @@ function updateClock() {
 }
 
 /**
-        *  @name updateMode
+  *  @name updateMode
 	*  @pre None
 	*  @post Updates the 12/24 hour mode to the desired mode.
 	*  @return None
