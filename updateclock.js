@@ -107,26 +107,3 @@ function updateClock() {
 function updateMode(mode) {
     standard = mode;
 }
-
-function stopWatchReset()
-{
-	stopwatch_hours = 0;
-	stopwatch_minutes = 0;
-	stopwatch_seconds = 0;
-}
-
-function stopWatchStop()
-{
-	stopwatch_running = false;
-}
-
-function stopWatchStart()
-{
-	stopwatch_running = true;
-}
-
-function executeStopwatch() {
-    startTime = new Date();
-    setInterval(Stopwatch, 1000);
-    Stopwatch();
-}

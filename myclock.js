@@ -83,27 +83,6 @@ function clock() {
 	document.getElementById("Timer").firstChild.nodeValue = currentTime;
 }
 
-function Stopwatch()
-{
-	//if(stopwatch_running == true)
-	//{
-		var userTime = new Date(2016, 0, 0, 0, 0, 0, 0);
-		var diffTime = new Date() - startTime;
-		userTime.setMilliseconds(userTime.getMilliseconds() + diffTime);
-
-		var seconds = (userTime.getSeconds() < 10 ? "0" : "") + userTime.getSeconds();
-		var minutes = (userTime.getMinutes() < 10 ? "0" : "") + userTime.getMinutes();
-		var hours = (userTime.getHours() < 10 ? "0" : "") + userTime.getHours();
-		var currentTime = hours + ":" + minutes + ":" + seconds;
-
-		document.getElementById("Stopwatch").firstChild.nodeValue = currentTime;
-	//}
-	//else if(stopwatch_running == false)
-	//{
-		
-	//}
-}
-
 var fontSize = 100;
 var timer = document.getElementById("Timer");
 function zoomOut()
