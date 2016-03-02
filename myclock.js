@@ -41,7 +41,7 @@ function clock() {
 	var userTime = new Date(2016, userMonth, userDate, userHours, userMinutes, userSeconds, 0);
 	var parity = "";
 	var diffTime = new Date() - startTime;
-	userTime.setMilliseconds(userTime.getMilliseconds() - diffTime);
+	userTime.setMilliseconds(userTime.getMilliseconds() + diffTime);
 	var dayofweek=userTime.getDay();
 	var day= "";
 	if(dayofweek==6){ day= "Friday!";}
@@ -81,29 +81,27 @@ function clock() {
 	var currentTime = hours + ":" + minutes + ":" + seconds + " " + parity + day;
 
 	document.getElementById("Timer").firstChild.nodeValue = currentTime;
+}
 
-	
-	//Stopwatch Stuff
-	var stopwatchTime = new Date(2016, 1, 1, 0, 0, 0 ,0);
-	var stopwatch_hours = 0;
-	var stopwatch_minutes = 0;
-	var stopwatch_seconds = 0;
-	var stopwatch_running = false;
-	if(stopwatch_running == true)
-	{
-		stopwatchTime.setMilliseconds(stopwatchTime.getMilliseconds() - diffTime);
-		var stopwatch_seconds = (stopwatchTime.getSeconds() < 10 ? "0" : "") + stopwatchTime.getSeconds();
-		var stopwatch_minutes = (stopwatchTime.getMinutes() < 10 ? "0" : "") + stopwatchTime.getMinutes();
-		var stopwatch_hours = (stopwatchTime.getHours() < 10 ? "0" : "") + stopwatchTime.getHours();
-	}
-	else
-	{
-		stopwatchTime.setMilliseconds(diffTime);
-	}
+function Stopwatch()
+{
+	//if(stopwatch_running == true)
+	//{
+		var userTime = new Date(2016, 0, 0, 0, 0, 0, 0);
+		var diffTime = new Date() - startTime;
+		userTime.setMilliseconds(userTime.getMilliseconds() + diffTime);
 
-	
-	var currentTime = stopwatch_hours + ":" + stopwatch_minutes + ":" + stopwatch_seconds;
-	document.getElementById("Stopwatch").firstChild.nodeValue = currentTime;
+		var seconds = (userTime.getSeconds() < 10 ? "0" : "") + userTime.getSeconds();
+		var minutes = (userTime.getMinutes() < 10 ? "0" : "") + userTime.getMinutes();
+		var hours = (userTime.getHours() < 10 ? "0" : "") + userTime.getHours();
+		var currentTime = hours + ":" + minutes + ":" + seconds;
+
+		document.getElementById("Stopwatch").firstChild.nodeValue = currentTime;
+	//}
+	//else if(stopwatch_running == false)
+	//{
+		
+	//}
 }
 
 var fontSize = 100;

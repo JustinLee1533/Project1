@@ -124,3 +124,9 @@ function stopWatchStart()
 {
 	stopwatch_running = true;
 }
+
+function executeStopwatch() {
+    startTime = new Date();
+    setInterval(Stopwatch, 1000);
+    Stopwatch();
+}

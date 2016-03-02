@@ -10,6 +10,14 @@ body {
 	color: navy;
 }
 
+#Stopwatch{
+	text-align: center;
+	height:50vh;
+	width: 100vw;
+	font-size: 100;
+	color: navy;
+}
+
 #buttons {
 	text-align: center;
 	width: 100vw;
@@ -23,3 +31,5 @@ button {
 	font-size: 5vh;
 
 }
+
+
