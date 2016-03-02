@@ -11,7 +11,8 @@
 
 	<link rel="stylesheet" type="text/css" href="myStyle.css">
 
-	<script src = "myclock.js">
+	<script type = "text/javascript" src = "stopwatch.js">
+		var stopwatch_running = false;
 	</script>
 
 	<script src = "stopwatch.js"></script>
@@ -49,9 +50,8 @@
 		<button onclick="">Reset</button>
 		<br><br>
 		Stopwatch
-		<button onclick="executeStopwatch()">Stopwatch Start</button>
-		<button onclick="stopWatchStop()">Pause</button>
-		<button onclick="stopWatchReset()">Reset</button>
+		<button onclick="executeStopwatch()">Start/Reset</button>
+		<button onclick="change_stopwatch_mode()">Pause/Resume</button>
 		<br><br>
 
 		<!--determine which days are acceptable based on month choice -->
