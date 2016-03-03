@@ -24,10 +24,10 @@
 		var standard = 0;
 
 		</script>
-		<script type = "text/javascript" src = "timerjs.js">
+		<script type = "text/javascript" src = "timer.js">
 			var timerHours;
 			var timerMinutes;
-			
+
 			var startTime;
 			var timerclk_running = false;
 			</script>
@@ -39,7 +39,7 @@
 <body onload ="updateMode(0)">
 		<div id = "Timer">00:00:00</div>
 		<div id = "Stopwatch">00:00:00</div>
-		<div id = "Timerclk">00:00:00</div>
+		<div id = "timerclk">00:00:00</div>
 
 
 	<div id = "buttons">
@@ -54,7 +54,7 @@
 		<button onclick="hide()">Hide Display</button>
 		<br><br>
 		Timer
-		<button onclick="">Timer Set</button>
+		<button onclick="executetimerclk()">Timer Set</button>
 		<button onclick="">Start</button>
 		<button onclick="">Pause</button>
 		<button onclick="">Resume</button>
