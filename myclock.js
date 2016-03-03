@@ -92,6 +92,7 @@ function zoomOut()
 		fontSize = fontSize-10;
 	}
 	document.getElementById("Timer").style.fontSize = fontSize+"%";
+  document.getElementById("Stopwatch").style.fontSize = fontSize+"%";
 
 }
 
@@ -102,6 +103,7 @@ function zoomIn()
 			fontSize = fontSize+10;
 		}
 			document.getElementById("Timer").style.fontSize = fontSize+"%";
+      document.getElementById("Stopwatch").style.fontSize = fontSize+"%";
 }
 
 var toggle = 0;

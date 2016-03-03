@@ -24,12 +24,23 @@
 		var standard = 0;
 
 		</script>
+		<script type = "text/javascript" src = "timerjs.js">
+			var timerHours;
+			var timerMinutes;
+			
+			var startTime;
+			var timerclk_running = false;
+			</script>
+
+
 
 </head>
 
 <body onload ="updateMode(0)">
 		<div id = "Timer">00:00:00</div>
 		<div id = "Stopwatch">00:00:00</div>
+		<div id = "Timerclk">00:00:00</div>
+
 
 	<div id = "buttons">
 		Clock Control
