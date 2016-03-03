@@ -12,6 +12,10 @@ function timerclk()
 		var minutes = (m_timer.getMinutes() < 10 ? "0" : "") + m_timer.getMinutes();
 		var hours = (m_timer.getHours() < 10 ? "0" : "") + m_timer.getHours();
 		var currentTime = hours + ":" + minutes + ":" + seconds;
+		if(m_timer.getHours()> (timerHours+1)&& m_timer.getMinutes()> (timerMinutes+1)){
+
+			currentTime="00:00:00";
+	}
 
 		document.getElementById("timerclk").firstChild.nodeValue = currentTime;
 	}
