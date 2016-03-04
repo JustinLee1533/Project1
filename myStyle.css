@@ -4,7 +4,7 @@ body {
 
 #Timer{
 	text-align: center;
-	height:50vh;
+	height:25vh;
 	width: 100vw;
 	font-size: 100;
 	color: navy;
@@ -12,7 +12,15 @@ body {
 
 #Stopwatch{
 	text-align: center;
-	height:50vh;
+	height:25vh;
+	width: 100vw;
+	font-size: 100;
+	color: navy;
+}
+
+#timerclk{
+	text-align: center;
+	height:25vh;
 	width: 100vw;
 	font-size: 100;
 	color: navy;
