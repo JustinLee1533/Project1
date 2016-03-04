@@ -113,10 +113,14 @@ function hide()
 	{
 		toggle = 1;
 		document.getElementById("Timer").style.color = "lightblue";
+		document.getElementById("Stopwatch").style.color = "lightblue";
+		document.getElementById("timerclk").style.color = "lightblue";
 	}else
 	{
 		toggle = 0;
 		document.getElementById("Timer").style.color = "navy";
+		document.getElementById("Stopwatch").style.color = "navy";
+		document.getElementById("timerclk").style.color = "navy";
 	}
 
 
