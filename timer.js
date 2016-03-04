@@ -12,10 +12,10 @@ function timerclk()
 		var minutes = (m_timer.getMinutes() < 10 ? "0" : "") + m_timer.getMinutes();
 		var hours = (m_timer.getHours() < 10 ? "0" : "") + m_timer.getHours();
 		var currentTime = hours + ":" + minutes + ":" + seconds;
-		if(m_timer.getHours()> (timerHours+1)&& m_timer.getMinutes()> (timerMinutes+1)){
-
+		if(m_timer.getHours()> (timerHours+1)&& m_timer.getMinutes()> (timerMinutes+1))
+		{
 			currentTime="00:00:00";
-	}
+		}
 
 		document.getElementById("timerclk").firstChild.nodeValue = currentTime;
 	}
@@ -24,33 +24,34 @@ function timerclk()
 
 function timerReset()
 {
-  var inputHours = prompt("Enter hours:");
-  timerHours = parseInt(inputHours);
+	var inputHours = prompt("Enter hours:");
+	timerHours = parseInt(inputHours);
 
-while (isNaN(timerHours) || timerHours >23 || timerHours <0)
-{
-inputHours = prompt("Please enter a number between 0 and 23:");
-timerHours = parseInt(inputHours);
-}
+	while (isNaN(timerHours) || timerHours >23 || timerHours <0)
+	{
+		inputHours = prompt("Please enter a number between 0 and 23:");
+		timerHours = parseInt(inputHours);
+	}
 
 
-var inputMinutes = prompt("Enter minutes:");
-timerMinutes = parseInt(inputMinutes);
-
-while (isNaN(timerMinutes) || timerMinutes >59 || timerMinutes <0)
-{
-	inputMinutes = prompt("Please enter a number between 0 and 59");
+	var inputMinutes = prompt("Enter minutes:");
 	timerMinutes = parseInt(inputMinutes);
-}
 
-var inputSeconds = prompt("Enter Seconds:")
-timerSeconds = parseInt(inputSeconds);
+	while (isNaN(timerMinutes) || timerMinutes >59 || timerMinutes <0)
+	{
+		inputMinutes = prompt("Please enter a number between 0 and 59");
+		timerMinutes = parseInt(inputMinutes);
+	}
 
-while(isNaN(timerSeconds)|| timerSeconds>59 || timerSeconds<0)
-{
-	inputSeconds = prompt("Please enter a number between 0 and 59");
-	timerSeconds= parseInt(inputSeconds);
-}
+	var inputSeconds = prompt("Enter Seconds:")
+	timerSeconds = parseInt(inputSeconds);
+
+	while(isNaN(timerSeconds)|| timerSeconds>59 || timerSeconds<0)
+	{
+		inputSeconds = prompt("Please enter a number between 0 and 59");
+		timerSeconds= parseInt(inputSeconds);
+	}
+
 	timerclk_running = true;
 }
 
@@ -71,32 +72,33 @@ function executetimerclk() {
 	var inputHours = prompt("Enter hours:");
 	timerHours = parseInt(inputHours);
 
-while (isNaN(timerHours) || timerHours >23 || timerHours <0)
-{
-inputHours = prompt("Please enter a number between 0 and 23:");
-timerHours = parseInt(inputHours);
-}
+	while (isNaN(timerHours) || timerHours >23 || timerHours <0)
+	{
+		inputHours = prompt("Please enter a number between 0 and 23:");
+		timerHours = parseInt(inputHours);
+	}
 
 
-var inputMinutes = prompt("Enter minutes:");
-timerMinutes = parseInt(inputMinutes);
-
-while (isNaN(timerMinutes) || timerMinutes >59 || timerMinutes <0)
-{
-	inputMinutes = prompt("Please enter a number between 0 and 59");
+	var inputMinutes = prompt("Enter minutes:");
 	timerMinutes = parseInt(inputMinutes);
-}
 
-var inputSeconds = prompt("Enter Seconds:")
-timerSeconds = parseInt(inputSeconds);
+	while (isNaN(timerMinutes) || timerMinutes >59 || timerMinutes <0)
+	{
+		inputMinutes = prompt("Please enter a number between 0 and 59");
+		timerMinutes = parseInt(inputMinutes);
+	}
 
-while(isNaN(timerSeconds)|| timerSeconds>59 || timerSeconds<0)
-{
-	inputSeconds = prompt("Please enter a number between 0 and 59");
-	timerSeconds= parseInt(inputSeconds);
-}
+	var inputSeconds = prompt("Enter Seconds:")
+	timerSeconds = parseInt(inputSeconds);
+
+	while(isNaN(timerSeconds)|| timerSeconds>59 || timerSeconds<0)
+	{
+		inputSeconds = prompt("Please enter a number between 0 and 59");
+		timerSeconds= parseInt(inputSeconds);
+	}
+	
 	timerclk_running = true;
-    startTime = new Date();
-    setInterval(timerclk, 1000);
-    timerclk();
+	startTime = new Date();
+	setInterval(timerclk, 1000);
+	timerclk();
 }
