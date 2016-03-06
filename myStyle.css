@@ -39,6 +39,7 @@ body {
 }
 
 #buttons {
+
 	position: absolute;
 	text-align: center;
 	top:300px;
@@ -49,9 +50,17 @@ body {
 }
 
 button {
+
+
+	webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
 	border-radius: 8px;
-	background-color: gray;
+	background-color:grey;
 	border: 2px black;
 	font-size: 5vh;
+
+}
+button:hover{
+	background-color: lightblue;
 
 }
