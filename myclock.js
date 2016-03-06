@@ -144,6 +144,10 @@ function hide()
 		document.getElementById("timerclk").style.color = "navy";
     document.getElementById("timerclk").style.top="200px";
     document.getElementById("Timer").style.top="0px";
+
+    document.getElementById("timerb").style.display="inline";
+    document.getElementById("stopb").style.display="inline";
+    document.getElementById("clockb").style.display="inline";
     onetoggle=0;
 	}
 

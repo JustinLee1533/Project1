@@ -105,6 +105,10 @@ function updateClock() {
 	*  @post Updates the 12/24 hour mode to the desired mode.
 	*  @return None
 */
-function updateMode(mode) {
-    standard = mode;
+function updateMode() {
+    if (standard==0) {
+      standard=1;
+    } else {
+      standard=0;
+    }
 }
