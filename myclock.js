@@ -38,19 +38,19 @@ function clock() {
           userDate = 0;
         }
 
-	var userTime = new Date(2016, userMonth, userDate, userHours, userMinutes, userSeconds, 0);
+	var userTime = new Date(2016, userMonth-1, userDate, userHours, userMinutes, userSeconds, 0);
 	var parity = "";
 	var diffTime = new Date() - startTime;
 	userTime.setMilliseconds(userTime.getMilliseconds() + diffTime);
 	var dayofweek=userTime.getDay();
 	var day= "";
-	if(dayofweek==6){ day= "Friday!";}
-	else if(dayofweek==0) { day= "Saturday";}
-	else if(dayofweek==1) { day= "Sunday";}
-	else if(dayofweek==2) { day= "Monday :(";}
-	else if(dayofweek==3) { day= "Tuesday";}
-	else if(dayofweek==4) { day= "Wednesday";}
-	else { day= "Thursday";}
+	if(dayofweek==0){ day= "Sunday";}
+	else if(dayofweek==1) { day= "Monday :(";}
+	else if(dayofweek==2) { day= "Tuesday";}
+	else if(dayofweek==3) { day= "Wednesday";}
+	else if(dayofweek==4) { day= "Thursday";}
+	else if(dayofweek==5) { day= "Friday";}
+	else if(dayofweek==6) { day= "Saturday";}
 
 	var seconds = (userTime.getSeconds() < 10 ? "0" : "") + userTime.getSeconds();
 	var minutes = (userTime.getMinutes() < 10 ? "0" : "") + userTime.getMinutes();

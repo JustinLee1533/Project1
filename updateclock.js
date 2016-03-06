@@ -13,7 +13,7 @@
 */
 function executeClock() {
     startTime = new Date();
-    setInterval(clock, 1000);
+    setInterval(clock, 500);
     clock();
 }
 
