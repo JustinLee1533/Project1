@@ -141,6 +141,8 @@ function onedisplay()
   	 	document.getElementById("Stopwatch").style.color = "lightblue";
   	 	document.getElementById("timerclk").style.color = "lightblue";
       document.getElementById("Timer").style.top="100px";
+      document.getElementById("timerb").style.display="none";
+      document.getElementById("stopb").style.display="none";
 
       break;
       case 1:
@@ -149,6 +151,8 @@ function onedisplay()
       	document.getElementById("Stopwatch").style.color = "navy";
       	document.getElementById("timerclk").style.color = "lightblue";
         document.getElementById("Timer").style.top="0px";
+        document.getElementById("clockb").style.display="none";
+        document.getElementById("stopb").style.display="inline";
         break;
       case 2:
         onetoggle = 3;
@@ -156,6 +160,8 @@ function onedisplay()
       	document.getElementById("Stopwatch").style.color = "lightblue";
       	document.getElementById("timerclk").style.color = "navy";
         document.getElementById("timerclk").style.top="100px";
+        document.getElementById("stopb").style.display="none";
+        document.getElementById("timerb").style.display="inline";
         break;
     case 3:
         onetoggle = 0;
@@ -163,6 +169,8 @@ function onedisplay()
       	document.getElementById("Stopwatch").style.color = "navy";
       	document.getElementById("timerclk").style.color = "navy";
         document.getElementById("timerclk").style.top="200px";
+        document.getElementById("stopb").style.display="inline";
+        document.getElementById("clockb").style.display="inline";
 
         break;
   }
