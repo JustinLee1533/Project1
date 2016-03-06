@@ -123,6 +123,8 @@ function hide()
 		document.getElementById("Timer").style.color = "navy";
 		document.getElementById("Stopwatch").style.color = "navy";
 		document.getElementById("timerclk").style.color = "navy";
+    document.getElementById("timerclk").style.top="200px";
+    document.getElementById("Timer").style.top="0px";
     onetoggle=0;
 	}
 
@@ -161,7 +163,7 @@ function onedisplay()
       	document.getElementById("Stopwatch").style.color = "navy";
       	document.getElementById("timerclk").style.color = "navy";
         document.getElementById("timerclk").style.top="200px";
-        
+
         break;
   }
 
