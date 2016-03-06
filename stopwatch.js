@@ -1,9 +1,4 @@
 var stopwatch_running = false;
-//Variables to keep track of pause time
-var pause_hours = 0;
-var pause_minutes = 0;
-var pause_seconds = 0;
-var pause_milliseconds = 0;
 
 //Variables to keep track of current stopwatch timing
 var sw_milliseconds_1970 = 0;
@@ -55,9 +50,22 @@ function change_stopwatch_mode()
 	}
 }
 
-function executeStopwatch() {
-    stopwatch_running = true;
-    sw_milliseconds_1970 = Date.now();
-    setInterval(Stopwatch, 250);
-    Stopwatch();
+function resetStopwatch()
+{
+	sw_milliseconds = 0;
+	sw_seconds = 0;
+	sw_minutes = 0;
+	sw_hours = 0;
+}
+
+function executeStopwatch() 
+{
+	stopwatch_running = true;
+	sw_milliseconds_1970 = Date.now();
+	var sw_milliseconds = 0;
+	var sw_seconds = 0;
+	var sw_minutes = 0;
+	var sw_hours = 0;
+	setInterval(Stopwatch, 250);
+	Stopwatch();
 }

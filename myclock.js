@@ -80,7 +80,7 @@ function clock() {
 
 	var currentTime = hours + ":" + minutes + ":" + seconds + " " + parity + day;
 
-	document.getElementById("Timer").firstChild.nodeValue = currentTime;
+	document.getElementById("Timer").firstChild.nodeValue = "Clock:  " + currentTime;
 }
 
 var fontSize = 100;
@@ -92,8 +92,8 @@ function zoomOut()
 		fontSize = fontSize-10;
 	}
 	document.getElementById("Timer").style.fontSize = fontSize+"%";
-  document.getElementById("Stopwatch").style.fontSize = fontSize+"%";
-
+	document.getElementById("Stopwatch").style.fontSize = fontSize+"%";
+	document.getElementById("timerclk").style.fontSize = fontSize+"%";
 }
 
 function zoomIn()
