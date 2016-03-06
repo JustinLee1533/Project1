@@ -48,6 +48,12 @@
 
 
 	<div id = "buttons">
+		Display Control
+		<button onclick="zoomIn()">Zoom In</button>
+		<button onclick="zoomOut()">Zoom Out</button>
+		<button onclick="hide()">Hide Display</button>
+		<button onclick="onedisplay()">changeDisplay</button>
+		<br><br>
 		<div id="clockb">
 		Clock Control
 
@@ -56,34 +62,29 @@
 		<button onclick="updateMode(1)">12-Hour Mode</button>
 		<br><br>
 	</div>
-		Display Control
-		<button onclick="zoomIn()">Zoom In</button>
-		<button onclick="zoomOut()">Zoom Out</button>
-		<button onclick="hide()">Hide Display</button>
-		<button onclick="onedisplay()">changeDisplay</button>
-		<br><br>
-		<div id="timerb">
-		Timer
 
-		<button onclick="executetimerclk()">Timer Set</button>
-		<button onclick="startTimer()">Start</button>
-		<button onclick="change_timerclk_mode()">Pause/Resume</button>
-		<button onclick="executetimerclk()">Reset</button>
-		<br><br>
-	</div>
 	<div id="stopb">
 		Stopwatch
 		<button onclick="executeStopwatch()">Start</button>
 		<button onclick="resetStopwatch()">Reset</button>
 		<button onclick="change_stopwatch_mode()">Pause/Resume</button>
 		<br><br>
-</div>
-		<!--determine which days are acceptable based on month choice -->
+	</div>
+	<div id="timerb">
+			Timer
 
-
-
+			<button onclick="executetimerclk()">Timer Set</button>
+			<button onclick="startTimer()">Start</button>
+			<button onclick="change_timerclk_mode()">Pause/Resume</button>
+			<button onclick="executetimerclk()">Reset</button>
+	<br><br>
 	</div>
 
-</body>
 
-</html>
+
+
+		</div>
+
+	</body>
+
+	</html>
