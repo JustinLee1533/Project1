@@ -70,11 +70,11 @@ function clock() {
 		}
 		else if(hours==12)
 		{
-			parity = "pm";
+			parity = "pm ";
 		}
 		else
 		{
-			parity = "am";
+			parity = "am ";
 		}
 	}
 
@@ -98,12 +98,13 @@ function zoomOut()
 
 function zoomIn()
 {
-		if(fontSize<500)
-		{
-			fontSize = fontSize+10;
-		}
-			document.getElementById("Timer").style.fontSize = fontSize+"%";
-      document.getElementById("Stopwatch").style.fontSize = fontSize+"%";
+	if(fontSize<500)
+	{
+		fontSize = fontSize+10;
+	}
+	document.getElementById("Timer").style.fontSize = fontSize+"%";
+	document.getElementById("Stopwatch").style.fontSize = fontSize+"%";
+	document.getElementById("timerclk").style.fontSize = fontSize+"%";
 }
 
 var toggle = 0;
