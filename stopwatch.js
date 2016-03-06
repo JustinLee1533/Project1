@@ -1,3 +1,15 @@
+/**
+*	@file : stopwatch.js
+*	@author :	Justin Lee, James Ballard, Brandon Givens
+*	@date : 2016.03.05
+*	@brief: defines the stopwatch works and is displayed 
+*/
+
+
+
+
+
+
 var stopwatch_running = false;
 
 //Variables to keep track of current stopwatch timing
@@ -6,7 +18,12 @@ var sw_milliseconds = 0;
 var sw_seconds = 0;
 var sw_minutes = 0;
 var sw_hours = 0;
-
+/**
+  *  @name onedisplay
+  *  @pre button clicked
+  *  @post runns the Stopwatch using
+  *  @return
+*/
 function Stopwatch()
 {
 	if(stopwatch_running == true)
@@ -22,7 +39,7 @@ function Stopwatch()
 		sw_minutes = Math.floor(sw_seconds/60);
 		sw_hours = Math.floor(sw_minutes/60);
 
-		//Formating time variables to show two digits	
+		//Formating time variables to show two digits
 		var seconds = (sw_seconds%60 < 10 ? "0" : "") + sw_seconds%60;
 		var minutes = (sw_minutes%60 < 10 ? "0" : "") + sw_minutes%60;
 		var hours = (sw_hours%24 < 10 ? "0" : "") + sw_hours%24;
@@ -37,7 +54,12 @@ function Stopwatch()
 		sw_milliseconds_1970 = Date.now();
 	}
 }
-
+/**
+  *  @name change_stopwatch_mode
+  *  @pre None
+  *  @post pauses the stopwatch and unpause the stopwatch
+  *  @return
+*/
 function change_stopwatch_mode()
 {
 	if(stopwatch_running == true)
@@ -49,7 +71,12 @@ function change_stopwatch_mode()
 		stopwatch_running = true;
 	}
 }
-
+/**
+  *  @name resetStopwatch
+  *  @pre None
+  *  @post reset the stopwatch
+  *  @return
+*/
 function resetStopwatch()
 {
 	sw_milliseconds = 0;
@@ -57,8 +84,13 @@ function resetStopwatch()
 	sw_minutes = 0;
 	sw_hours = 0;
 }
-
-function executeStopwatch() 
+/**
+  *  @name executeStopwatch
+  *  @pre None
+  *  @post  begins the ticking of the timer
+  *  @return
+*/
+function executeStopwatch()
 {
 	stopwatch_running = true;
 	sw_milliseconds_1970 = Date.now();

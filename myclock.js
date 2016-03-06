@@ -1,8 +1,9 @@
 /**
 *	@file : myClock.js
 *	@author : Ethan Ward, Mike Neises, Travis Augustine
-*	@date : 2016.02.13
-*	@brief: Sets the time based on user input, updates it using the difference from the current time, changes how the display of the time looks, and then displays in in the browser.
+* @author2:  	Justin Lee, James Ballard, Brandon Givens
+*	@date : 2016.03.05
+*	@brief: Sets the time based on user input, updates it using the difference from the current time, changes how the display of the time looks, and then displays in in the browser. Also handles the toggle of the display.
 */
 
 /**
@@ -85,6 +86,14 @@ function clock() {
 
 var fontSize = 100;
 var timer = document.getElementById("Timer");
+
+/**
+  *  @name zoomOut
+	*  @pre None
+	*  @post decreases the FontSive of our three clock lines
+	*  @return
+*/
+
 function zoomOut()
 {
 	if(fontSize>10)
@@ -95,7 +104,12 @@ function zoomOut()
 	document.getElementById("Stopwatch").style.fontSize = fontSize+"%";
 	document.getElementById("timerclk").style.fontSize = fontSize+"%";
 }
-
+/**
+  *  @name zoomIn
+  *  @pre None
+  *  @post increases the FontSive of our three clock lines
+  *  @return
+*/
 function zoomIn()
 {
 	if(fontSize<500)
@@ -108,7 +122,12 @@ function zoomIn()
 }
 var toggle = 0;
 var onetoggle=0;
-
+/**
+  *  @name hide
+  *  @pre None
+  *  @post toggle all of the clock lines and will reset it to show all of the lines
+  *  @return
+*/
 function hide()
 {
 	if(toggle == 0)
@@ -130,21 +149,28 @@ function hide()
 
 
 }
+
+/**
+  *  @name onedisplay
+  *  @pre None
+  *  @post toggles which modes of the clock are in View using CSS black magic
+  *  @return
+*/
 function onedisplay()
 {
   switch (onetoggle) {
-    case 0:
-    onetoggle = 1;
+      case 0:
+      onetoggle = 1; // will toggle between four numbers
 
-    	document.getElementById("Timer").style.color = "navy";
+      	document.getElementById("Timer").style.color = "navy";
 
-  	 	document.getElementById("Stopwatch").style.color = "lightblue";
-  	 	document.getElementById("timerclk").style.color = "lightblue";
-      document.getElementById("Timer").style.top="100px";
-      document.getElementById("timerb").style.display="none";
-      document.getElementById("stopb").style.display="none";
+    	 	document.getElementById("Stopwatch").style.color = "lightblue";
+    	 	document.getElementById("timerclk").style.color = "lightblue";
+        document.getElementById("Timer").style.top="100px";
+        document.getElementById("timerb").style.display="none";
+        document.getElementById("stopb").style.display="none";
 
-      break;
+        break;
       case 1:
         onetoggle = 2;
         document.getElementById("Timer").style.color = "lightblue";
@@ -173,23 +199,9 @@ function onedisplay()
         document.getElementById("clockb").style.display="inline";
 
         break;
+      default:
+      onetoggle=0; //in case something goes wrong
+
   }
 
   }
-	// if(onetoggle == 0)
-	// {
-	// 	onetoggle = 1;
-  //
-	// 	document.getElementById("Stopwatch").style.color = "lightblue";
-	// 	document.getElementById("timerclk").style.color = "lightblue";
-	// }else if (	onetoggle = 1) {
-	//
-	// } else {
-	//
-	// }
-	// {
-	// 	onetoggle = 0;
-	// 	document.getElementById("Timer").style.color = "navy";
-	// 	document.getElementById("Stopwatch").style.color = "navy";
-	// 	document.getElementById("timerclk").style.color = "navy";
-	// }

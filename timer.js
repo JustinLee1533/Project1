@@ -1,11 +1,25 @@
-var timerclk_running = false;
+
+/**
+*	@file : stopwatch.js
+*	@author :	Justin Lee, James Ballard, Brandon Givens
+*	@date : 2016.03.05
+*	@brief: defines the timer works and is displayed
+*/
 var m_timer =  new Date(2016, 0, 0, 0, 0, 0, 0);
 var skiptime=new Date();
+var timerclk_running=false;
+
+/**
+  *  @name timerclk
+  *  @pre None
+  *  @post The time is set and then updated using the difference between its time and the current time. The string used for displaying the time is updated according to the mode, and the timer is displayed.
+  *  @return
+*/
 function timerclk()
 {
 	if(timerclk_running == true)
 	{
-
+		// instead of using one start time we are using a skiptime instead as start wouldn't allow to pause the timer
 		var diffTime = new Date() - skipTime;
 		m_timer.setMilliseconds(m_timer.getMilliseconds() - diffTime);
 
@@ -23,7 +37,12 @@ function timerclk()
 	}
 
 }
-
+/**
+  *  @namee startTimer
+	*  @pre settimerclk() has been called to set a time.
+	*  @post The timerClk function is called to display the time.
+	*  @return None
+*/
 
 function startTimer() {
 	m_timer =  new Date(2016, 0, 0, timerHours, timerMinutes, timerSeconds, 0);
@@ -35,7 +54,12 @@ function startTimer() {
 
 }
 
-
+/**
+  *  @name change_stopwatch_mode
+  *  @pre None
+  *  @post pauses the stopwatch and unpause the stopwatch
+  *  @return
+*/
 
 function change_timerclk_mode()
 {
@@ -51,8 +75,15 @@ function change_timerclk_mode()
 	}
 }
 
+/**
+  *  @name updateClock
+	*  @pre None
+	*  @post Takes in input from the user to set the desired time, then executes the timer.
+	*  @return None
+*/
+function setimerclk() {
+	// Based this input on the user clock minus the fact it doesn't call start timer at the end as the user has that abilty
 
-function executetimerclk() {
 	var inputHours = prompt("Enter hours:");
 	timerHours = parseInt(inputHours);
 	if(timerclk_running == true){timerclk_running = false;}

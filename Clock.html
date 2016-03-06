@@ -1,6 +1,7 @@
 <!--**
 *	@file : Clock.html
 *	@author : Ethan Ward, Mike Neises, Travis Augustine
+* @author2:  	Justin Lee, James Ballard, Brandon Givens
 *	@date : 2016.02.13
 *	@brief: Displays the user interface for setting and changing the mode of the clock.
 *-->
@@ -32,9 +33,7 @@
 
 		</script>
 		<script type = "text/javascript" src = "timer.js">
-			var timerHours;
-			var timerMinutes;
-			var timerclk_running = false;
+		
 			</script>
 
 
@@ -73,7 +72,7 @@
 	<div id="timerb">
 			Timer
 
-			<button onclick="executetimerclk()">Timer Set</button>
+			<button onclick="setimerclk()">Timer Set</button>
 			<button onclick="startTimer()">Start</button>
 			<button onclick="change_timerclk_mode()">Pause/Resume</button>
 			<button onclick="executetimerclk()">Reset</button>
