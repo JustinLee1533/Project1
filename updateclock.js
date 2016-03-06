@@ -2,7 +2,7 @@
 *	@file : updateClock.js
 *	@author : Ethan Ward, Mike Neises, Travis Augustine
 * @author2:  	Justin Lee, James Ballard, Brandon Givens
-*	@date : 2016.03.05
+*	@date : 2016.03.04
 *	@brief: Gets input from the user for what settings they want, then updates them for use by clock().
 */
 
@@ -105,10 +105,7 @@ function updateClock() {
 	*  @post Updates the 12/24 hour mode to the desired mode.
 	*  @return None
 */
-function updateMode() {
-    if (standard==0) {
-      standard=1;
-    } else {
-      standard=0;
-    }
+function updateMode(mode) {
+    standard = mode;
+  
 }
