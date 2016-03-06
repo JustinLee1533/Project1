@@ -78,7 +78,7 @@ function clock() {
 		}
 	}
 
-	var currentTime = hours + ":" + minutes + ":" + seconds + " " + parity + day;
+	var currentTime = hours + ":" + minutes + ":" + seconds + " " + parity +" "+ day;
 
 	document.getElementById("Timer").firstChild.nodeValue = "Clock:  " + currentTime;
 }
