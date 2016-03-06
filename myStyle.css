@@ -3,30 +3,47 @@ body {
 }
 
 #Timer{
+
+	position: absolute;
 	text-align: center;
+	top:0px;
 	height:12vh;
 	width: 100vw;
 	font-size: 100;
 	color: navy;
+	z-index: 0;
 }
 
 #Stopwatch{
+	position: absolute;
 	text-align: center;
+	top:100px;
 	height:12vh;
 	width: 100vw;
 	font-size: 100;
 	color: navy;
+	z-index: -2;
 }
 
 #timerclk{
+
+	position: absolute;
 	text-align: center;
+	top:200px;
+
 	height:12vh;
 	width: 100vw;
 	font-size: 100;
 	color: navy;
+	z-index: -1;
+
 }
 
 #buttons {
+	position: absolute;
+	text-align: center;
+	top:300px;
+
 	text-align: center;
 	width: 100vw;
 	height:50vh;
@@ -39,5 +56,3 @@ button {
 	font-size: 5vh;
 
 }
-
-

@@ -10,12 +10,19 @@
 <head>
 
 	<link rel="stylesheet" type="text/css" href="myStyle.css">
+	<script src = "myclock.js">
+
+
+
+	</script>
+
+
 
 	<script type = "text/javascript" src = "stopwatch.js">
 		var stopwatch_running = false;
 	</script>
 
-	<script src = "myclock.js"></script>
+
 
 	<script type = "text/javascript" src = "updateclock.js">
 		var userHours;
@@ -27,8 +34,6 @@
 		<script type = "text/javascript" src = "timer.js">
 			var timerHours;
 			var timerMinutes;
-
-			var startTime;
 			var timerclk_running = false;
 			</script>
 
@@ -52,10 +57,11 @@
 		<button onclick="zoomIn()">Zoom In</button>
 		<button onclick="zoomOut()">Zoom Out</button>
 		<button onclick="hide()">Hide Display</button>
+		<button onclick="onedisplay()">changeDisplay</button>
 		<br><br>
 		Timer
 		<button onclick="executetimerclk()">Timer Set</button>
-		<button onclick="startTime()">Start</button>
+		<button onclick="startTimer()">Start</button>
 		<button onclick="change_timerclk_mode()">Pause/Resume</button>
 		<button onclick="executetimerclk()">Reset</button>
 		<br><br>

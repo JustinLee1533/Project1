@@ -106,8 +106,9 @@ function zoomIn()
 	document.getElementById("Stopwatch").style.fontSize = fontSize+"%";
 	document.getElementById("timerclk").style.fontSize = fontSize+"%";
 }
-
 var toggle = 0;
+var onetoggle=0;
+
 function hide()
 {
 	if(toggle == 0)
@@ -122,7 +123,63 @@ function hide()
 		document.getElementById("Timer").style.color = "navy";
 		document.getElementById("Stopwatch").style.color = "navy";
 		document.getElementById("timerclk").style.color = "navy";
+    onetoggle=0;
 	}
 
 
 }
+function onedisplay()
+{
+  switch (onetoggle) {
+    case 0:
+    onetoggle = 1;
+
+    	document.getElementById("Timer").style.color = "navy";
+
+  	 	document.getElementById("Stopwatch").style.color = "lightblue";
+  	 	document.getElementById("timerclk").style.color = "lightblue";
+      document.getElementById("Timer").style.top="100px";
+
+      break;
+      case 1:
+        onetoggle = 2;
+        document.getElementById("Timer").style.color = "lightblue";
+      	document.getElementById("Stopwatch").style.color = "navy";
+      	document.getElementById("timerclk").style.color = "lightblue";
+        document.getElementById("Timer").style.top="0px";
+        break;
+      case 2:
+        onetoggle = 3;
+        document.getElementById("Timer").style.color = "lightblue";
+      	document.getElementById("Stopwatch").style.color = "lightblue";
+      	document.getElementById("timerclk").style.color = "navy";
+        document.getElementById("timerclk").style.top="100px";
+        break;
+    case 3:
+        onetoggle = 0;
+      	document.getElementById("Timer").style.color = "navy";
+      	document.getElementById("Stopwatch").style.color = "navy";
+      	document.getElementById("timerclk").style.color = "navy";
+        document.getElementById("timerclk").style.top="200px";
+        
+        break;
+  }
+
+  }
+	// if(onetoggle == 0)
+	// {
+	// 	onetoggle = 1;
+  //
+	// 	document.getElementById("Stopwatch").style.color = "lightblue";
+	// 	document.getElementById("timerclk").style.color = "lightblue";
+	// }else if (	onetoggle = 1) {
+	//
+	// } else {
+	//
+	// }
+	// {
+	// 	onetoggle = 0;
+	// 	document.getElementById("Timer").style.color = "navy";
+	// 	document.getElementById("Stopwatch").style.color = "navy";
+	// 	document.getElementById("timerclk").style.color = "navy";
+	// }

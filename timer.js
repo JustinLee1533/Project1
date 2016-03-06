@@ -25,7 +25,7 @@ function timerclk()
 }
 
 
-function startTime() {
+function startTimer() {
 	m_timer =  new Date(2016, 0, 0, timerHours, timerMinutes, timerSeconds, 0);
 	skipTime = new Date();
 	timerclk_running = true;
@@ -55,6 +55,8 @@ function change_timerclk_mode()
 function executetimerclk() {
 	var inputHours = prompt("Enter hours:");
 	timerHours = parseInt(inputHours);
+	if(timerclk_running == true){timerclk_running = false;}
+
 
 	while (isNaN(timerHours) || timerHours >23 || timerHours <0)
 	{
@@ -80,8 +82,10 @@ function executetimerclk() {
 		inputSeconds = prompt("Please enter a number between 0 and 59");
 		timerSeconds= parseInt(inputSeconds);
 	}
-
-	var currentTime = timerHours + ":" + timerMinutes + ":" + timerSeconds;
+	var seconds = (timerSeconds< 10 ? "0" : "") + timerSeconds;
+	var minutes = (timerMinutes < 10 ? "0" : "") + timerMinutes;
+	var hours = (timerHours < 10 ? "0" : "") + timerHours;
+	var currentTime = hours + ":" + minutes + ":" + seconds;
 	document.getElementById("timerclk").firstChild.nodeValue = "Timer:" + currentTime;
 
 
