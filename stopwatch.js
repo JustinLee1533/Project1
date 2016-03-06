@@ -34,15 +34,6 @@ function Stopwatch()
 	else if(stopwatch_running == false)
 	{
 		sw_milliseconds_1970 = Date.now();
-		//var temp_date = new Date();
-		//var temp_ms = temp_date.getMilliseconds() - pause_milliseconds;
-		//var temp_s = temp_date.getSeconds() - pause_milliseconds;
-		//var temp_m = temp_date.getMinutes() - pause_minutes;
-		//var temp_h = temp_date.getHours() - pause_hours;
-		//pause_milliseconds = pause_milliseconds + temp_ms;
-		//pause_seconds = pause_seconds + temp_s;
-		//pause_minutes = pause_minutes + temp_m;
-		//pause_hours = pause_hours + temp_h;
 	}
 }
 
@@ -51,18 +42,10 @@ function change_stopwatch_mode()
 	if(stopwatch_running == true)
 	{
 		stopwatch_running = false;
-		//pause_milliseconds = startTime.getMilliseconds();
-		//pause_seconds = startTime.getSeconds();
-		//pause_minutes = startTime.getMinutes();
-		//pause_hours = startTime.getHours();
 	}
 	else if(stopwatch_running == false)
 	{
 		stopwatch_running = true;
-		//startTime.setMilliseconds(pause_milliseconds);
-		//startTime.setSeconds(pause_seconds);
-		//startTime.setMinutes(pause_minutes);
-		//startTime.setHours(pause_hours);
 	}
 }
 
