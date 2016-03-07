@@ -1,0 +1,134 @@
+/**
+  *  @name clock
+	*  @pre None, although ideally updateClock() has been called to set the time.
+	*  @post The time is set and then updated using the difference between its time and the current time. The string used for displaying the time is updated according to the mode, and the time is displayed.
+	*  @return
+*/
+
+/**
+  *  @name zoomOut
+	*  @pre None
+	*  @post decreases the FontSive of our three clock lines
+	*  @return
+*/
+
+/**
+  *  @name zoomIn
+  *  @pre None
+  *  @post increases the FontSive of our three clock lines
+  *  @return
+*/
+
+
+/**
+  *  @name hide
+  *  @pre None
+  *  @post toggle all of the clock lines and will reset it to show all of the lines
+  *  @return
+*/
+
+/**
+  *  @name onedisplay
+  *  @pre None
+  *  @post toggles which modes of the clock are in View using CSS black magic
+  *  @return
+*/
+
+/**
+*	@file : stopwatch.js
+*	@author :	Justin Lee, James Ballard, Brandon Givens
+*	@date : 2016.03.05
+*	@brief: defines the stopwatch works and is displayed
+*/
+
+/**
+  *  @name onedisplay
+  *  @pre button clicked
+  *  @post runns the Stopwatch using
+  *  @return
+*/
+
+/**
+  *  @name change_stopwatch_mode
+  *  @pre None
+  *  @post pauses the stopwatch and unpause the stopwatch
+  *  @return
+*/
+
+/**
+  *  @name change_stopwatch_mode
+  *  @pre None
+  *  @post pauses the stopwatch and unpause the stopwatch
+  *  @return
+*/
+
+/**
+  *  @name resetStopwatch
+  *  @pre None
+  *  @post reset the stopwatch
+  *  @return
+*/
+
+/**
+  *  @name executeStopwatch
+  *  @pre None
+  *  @post  begins the ticking of the timer
+  *  @return
+*/
+
+
+/**
+*	@file : stopwatch.js
+*	@author :	Justin Lee, James Ballard, Brandon Givens
+*	@date : 2016.03.05
+*	@brief: defines the timer works and is displayed
+*/
+
+/**
+  *  @name timerclk
+  *  @pre None
+  *  @post The time is set and then updated using the difference between its time and the current time. The string used for displaying the time is updated according to the mode, and the timer is displayed.
+  *  @return
+*/
+
+/**
+  *  @namee startTimer
+	*  @pre settimerclk() has been called to set a time.
+	*  @post The timerClk function is called to display the time.
+	*  @return None
+*/
+
+/**
+  *  @name change_stopwatch_mode
+  *  @pre None
+  *  @post pauses the stopwatch and unpause the stopwatch
+  *  @return
+*/
+
+/**
+  *  @name updateClock
+	*  @pre None
+	*  @post Takes in input from the user to set the desired time, then executes the timer.
+	*  @return None
+*/
+
+/**
+  *  @name executeClock
+	*  @pre updateClock() has been called to set a time.
+	*  @post The clock function is called to display the time.
+	*  @return None
+*/
+
+/**
+  *  @name updateClock
+	*  @pre None
+	*  @post Takes in input from the user to set the desired time, then executes the clock.
+	*  @return None
+*/
+
+/**
+  *  @name updateMode
+	*  @pre None
+	*  @post Updates the 12/24 hour mode to the desired mode.
+	*  @return None
+*/
